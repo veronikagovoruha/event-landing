@@ -1,0 +1,22 @@
+.header {
+    padding-top: 40px;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item:not(:last-child){
+    padding-right: 40px;
+}
+.nav__link {
+    font-family: 'Inter' sans-serif;
+    @include fonts(normal, 400, 14px, 1.4);
+    color: #B7C1D8;
+}
+.header__btn {
+    padding: 13px 20px;
+}

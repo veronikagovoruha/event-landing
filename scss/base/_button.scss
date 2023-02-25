@@ -1,0 +1,9 @@
+.btn{
+    text-transform: uppercase;
+    font-family: 'Inter' sans-serif;
+    @include fonts(normal, 500, 16px, 1.8);
+    border: none;
+    background: linear-gradient(273.31deg, #7F1CFC 0.79%, #FF1C60 98.6%);
+    border-radius: 50px;
+    color: #FFFFFF;
+}
