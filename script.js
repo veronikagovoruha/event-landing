@@ -1,8 +1,9 @@
 const burgerBtn = document.querySelector(".header__burger");
+const headerBtn = document.querySelector('.header');
 
 function openMenu(){
     burgerBtn.classList.toggle('active');
-    console.log('11');
+    headerBtn.classList.toggle('open')
 }
 
 burgerBtn.addEventListener('click', openMenu);
