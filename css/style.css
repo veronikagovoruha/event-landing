@@ -42,7 +42,7 @@ ul, li {
 
 .btn {
   text-transform: uppercase;
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -63,6 +63,10 @@ ul, li {
   justify-content: space-between;
 }
 
+.header__burger-wrapper {
+  display: none;
+}
+
 .header__burger {
   display: none;
 }
@@ -76,7 +80,7 @@ ul, li {
 }
 
 .nav__link {
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -104,6 +108,12 @@ ul, li {
     display: none;
   }
   .header__nav {
+    display: none;
+  }
+  .header__burger-wrapper {
+    display: block;
+  }
+  .burger__nav {
     position: absolute;
     left: -650px;
     top: 0;
@@ -113,10 +123,10 @@ ul, li {
     padding: 75px 20px 50px 20px;
     transition: transform 0.5s;
   }
-  .nav__list {
-    flex-direction: column;
+  .burger__list {
+    margin-left: 50px;
   }
-  .header.open .header__nav {
+  .header.open .burger__nav {
     transform: translateX(650px);
     z-index: 1;
   }
@@ -130,17 +140,20 @@ ul, li {
     background-color: transparent;
     border: none;
   }
-  .nav__item {
-    display: block;
-  }
-  .nav__item:not(:last-child) {
+  .burger__item {
     padding-bottom: 20px;
   }
-  .nav__link {
+  .burger__btn {
+    font-family: "Inter", sans-serif;
+    margin-left: 50px;
+    padding: 13px 20px;
+  }
+  .burger__link {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.4;
+    color: #B7C1D8;
   }
   .header__burger span {
     position: absolute;
@@ -184,7 +197,7 @@ ul, li {
   .header__burger.active span {
     transform: scale(0);
   }
-  .header__burger.header__nav.active {
+  .header__burger.burger__nav.active {
     transform: translateX(100%);
     z-index: 1;
   }
