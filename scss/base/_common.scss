@@ -15,10 +15,12 @@ body{
   background-color: #0E121B;
   background-image: url('../../img/elements-lines.png');
   color: #ffffff;
+  // overflow: hidden;
 }
 
 img {
   display: block;
+  width: 100%;
 }
 
 a{
@@ -30,4 +32,24 @@ ul, li{
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+
+.title{
+  font-family: 'Bebas Neue', cursive;
+  @include fonts(normal, 700, 72px, 1);
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+@media(max-width: 767.99px){
+  .title{
+    @include fonts(normal, 700, 56px, 1);
+  }
+  
+}
+
+@media(max-width: 375px){
+  .title{
+    @include fonts(normal, 700, 36px, 1);
+  }
 }
